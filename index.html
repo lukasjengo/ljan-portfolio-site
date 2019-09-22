@@ -4,18 +4,167 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
     <link href="https://fonts.googleapis.com/css?family=Muli:400,700,900&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="css/style.css">
-    <!--Dont forget to insert favicon-->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
-    <title>LJan | Web Developer, Guide of the Internet Jungles</title>
-
+    <title>LJan | Web Developer, Guide of the Digital Jungle</title>
+    <meta name="description" content="LJan web developer portfolio website.">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <!--Favicons-->
+    <link rel="apple-touch-icon" sizes="60x60" href="./img/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./img/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./img/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-    
-    
+    <div class="navigation">
+        <div class="navigation__logo-box">
+            <a href="/"><img src="img/svg/ljan-logo.svg" alt="ljan logo"></a>
+        </div>
+        <button class="navigation__btn">Checkout CV</button>
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon"></span>
+        </label>
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#section-home" class="navigation__link">Home</a></li>
+                <li class="navigation__item"><a href="#section-projects" class="navigation__link">Portfolio</a></li>
+                <li class="navigation__item"><a href="#section-knowledge" class="navigation__link">Knowledge</a></li>
+                <li class="navigation__item"><a href="#section-about" class="navigation__link">About</a></li>
+                <li class="navigation__item"><a href="#section-contact" class="navigation__link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <header class="header" id="section-home">
+            <h1 class="header__heading--main">Hey!<span class="header__heading--sub">I am Lukas - a web developer and guide of the digital jungle.</span></h1>
+            <a href="#section-projects" class="btn btn--primary">Some of my projects</a>
+        </header>
+
+        <section class="section-projects" id="section-projects" data-target="carousel">
+            <h2 class="heading-secondary u-span-full-grid">Some of my projects.</h2>
+                <div class="project" data-target="card">
+                    <img src="img/svg/react-icon.svg" alt="react icon" class="project__image">
+                    <h4 class="project__title">Recipe finder SPA</h4>
+                    <a href="https://cookit.ljan.dev/" class="project__btn u-span-2" target="_blank" rel="noopener noreferrer"><img src="img/svg/earth-icon.svg" alt="website link icon" class="project__icon"><span class="project__btn-text">Visit</span></a>
+                    <a href="https://github.com/lukasjengo/cookit-app" class="project__btn u-span-2" target="_blank" rel="noopener noreferrer"><img src="img/svg/github-icon.svg" alt="github icon" class="project__icon"><span class="project__btn-text">Source</span></a>
+                    <a href="#!" data-popup="popup-recipe-finder" class="project__btn u-span-2" id="popup-btn"><img src="img/svg/new-tab-icon.svg" alt="more info icon" class="project__icon"><span class="project__btn-text">Features</span></a>
+                </div>
+                <div class="project" data-target="card">
+                    <img src="img/svg/react-icon.svg" alt="react icon" class="project__image">
+                    <h4 class="project__title">Social network SPA</h4>
+                    <a href="https://fierce-citadel-02022.herokuapp.com/" class="project__btn u-span-2" target="_blank" rel="noopener noreferrer"><img src="img/svg/earth-icon.svg" alt="website link icon" class="project__icon"><span class="project__btn-text">Visit</span></a>
+                    <a href="https://github.com/lukasjengo/social-network-app" class="project__btn u-span-2" target="_blank" rel="noopener noreferrer"><img src="img/svg/github-icon.svg" alt="github icon" class="project__icon"><span class="project__btn-text">Source</span></a>
+                    <a href="#!" class="project__btn u-span-2" data-popup="popup-social-network" id="popup-btn"><img src="img/svg/new-tab-icon.svg" alt="more info icon" class="project__icon"><span class="project__btn-text">Features</span></a>
+                </div>
+                <div class="project" data-target="card">
+                    <img src="img/svg/wordpress-icon.svg" alt="wordpress icon" class="project__image">
+                    <h4 class="project__title">E-commerce website</h4>
+                    <a href="https://www.modernshop.eu/" class="project__btn u-span-3" target="_blank" rel="noopener noreferrer nofollow"><img src="img/svg/earth-icon.svg" alt="website link icon" class="project__icon"><span class="project__btn-text">Visit</span></a>
+                    <a href="#!" class="project__btn u-span-3" data-popup="popup-wordpress" id="popup-btn"><img src="img/svg/new-tab-icon.svg" alt="more info icon" class="project__icon"><span class="project__btn-text">Features</span></a>
+                </div>
+                <div class="project" data-target="card">
+                    <img src="img/svg/wordpress-icon.svg" alt="wordpress icon" class="project__image">
+                    <h4 class="project__title">Small business website</h4>
+                    <a href="https://www.mhealth.lt/" class="project__btn u-span-3" target="_blank" rel="noopener noreferrer nofollow"><img src="img/svg/earth-icon.svg" alt="website link icon" class="project__icon"><span class="project__btn-text">Visit</span></a>
+                    <a href="#!" class="project__btn u-span-3" data-popup="popup-wordpress" id="popup-btn"><img src="img/svg/new-tab-icon.svg" alt="more info icon" class="project__icon"><span class="project__btn-text">Features</span></a>
+                </div>
+        </section>
+        <section class="section-knowledge" id="section-knowledge">
+          <h2 class="heading-secondary heading-secondary--gradient">Knowledge under my belt.</h2>
+          <div class="knowledge">
+            <p class="paragraph">Some of the things I have learnt, while wandering in the digital jungle.</p>
+            <h3 class="heading-tertiary heading-tertiary--gradient">Web development knowledge</h3>
+            <ul class="knowledge__list">
+              <li class="knowledge__list--item">HTML5</li>
+              <li class="knowledge__list--item">CSS3 / SASS</li>
+              <li class="knowledge__list--item">JavaScript</li>
+              <li class="knowledge__list--item">React, Redux</li>
+              <li class="knowledge__list--item">Node.js</li>       
+              <li class="knowledge__list--item">WordPress</li>
+              <li class="knowledge__list--item">SEO</li>
+              <li class="knowledge__list--item">Performance optimization</li>
+            </ul>
+            <h3 class="heading-tertiary heading-tertiary--gradient">Digital knowledge</h3>
+            <ul class="knowledge__list">
+              <li class="knowledge__list--item">Facebook ads</li>
+              <li class="knowledge__list--item">Google ads</li>
+              <li class="knowledge__list--item">E-mail marketing</li>
+              <li class="knowledge__list--item">E-commerce</li> 
+            </ul>
+          </div>
+        </section>
+        <section class="section-about" id="section-about">
+          <h2 class="heading-secondary u-span-full-grid">Briefly about myself.</h2>
+          <img src="./img/ljan-profile-picture.jpg" class="about__profile-img" alt="ljan profile picture">
+          <p class="paragraph u-text-dark">During the last 4 years I have learnt many digital things, while working on an e-commerce business. Marketing, Facebook, Google ads, SEO, product sourcing, WordPress. Now I am digging deeper and uncovering the depths of JavaScript and web development, working daily to improve my skills.</p>
+        </section>
+        <section class="section-contact" id="section-contact">
+          <form name="contact" method="POST" class="contact-form" data-netlify="true">
+            <label for="name" class="contact-form__label">Name</label>
+            <input name="name"  type="text" id="name" class="contact-form__input">
+            <label for="email" class="contact-form__label">E-mail</label>
+            <input name="email" type="email" id="email" class="contact-form__input">
+            <label for="message" class="contact-form__label">Message</label>
+            <textarea name="message" id="message" rows="3" class="contact-form__input"></textarea>
+            <button type="submit" class="btn btn--primary u-justify-self-start">Send</button>
+          </form>
+          <h2 class="heading-secondary heading-secondary--gradient u-phone-grid-item-top-pos">Send me a message.</h2>
+        </section>
+    </div>
+    <div class="popup" id="popup-recipe-finder">
+      <button class="btn btn--close">&times</button>
+      <h3 class="heading-tertiary heading-tertiary--gradient u-mb-small">Features</h3>
+        <ul class="knowledge__list">
+          <li class="knowledge__list--item">React</li>
+          <li class="knowledge__list--item">Redux</li>
+          <li class="knowledge__list--item">Router</li>
+          <li class="knowledge__list--item">SASS</li>
+          <li class="knowledge__list--item">External API</li>
+          <li class="knowledge__list--item">Local storage</li>       
+        </ul>
+    </div>
+    <div class="popup" id="popup-social-network">
+      <button class="btn btn--close">&times</button>
+      <h3 class="heading-tertiary heading-tertiary--gradient u-mb-small">Features</h3>
+        <ul class="knowledge__list">
+          <li class="knowledge__list--item">React</li>
+          <li class="knowledge__list--item">Redux</li>
+          <li class="knowledge__list--item">Node.js</li>
+          <li class="knowledge__list--item">MongoDB</li>
+          <li class="knowledge__list--item">Express.js</li>
+          <li class="knowledge__list--item">API</li>       
+        </ul>
+    </div>
+    <div class="popup" id="popup-wordpress">
+      <button class="btn btn--close">&times</button>
+      <h3 class="heading-tertiary heading-tertiary--gradient u-mb-small">Features</h3>
+        <ul class="knowledge__list">
+          <li class="knowledge__list--item">WordPress</li>
+          <li class="knowledge__list--item">E-commerce integration</li>
+          <li class="knowledge__list--item">Performance optimization</li>
+          <li class="knowledge__list--item">SEO optimization</li>
+          <li class="knowledge__list--item">Google analytics</li>
+          <li class="knowledge__list--item">Facebook pixel</li>       
+        </ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+    <script src='./js/main.js'></script>
 </body>
 </html>

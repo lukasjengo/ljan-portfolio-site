@@ -1,0 +1,37 @@
+.u-mb-small {
+  margin-bottom: 2rem !important;
+}
+
+.u-mb-medium {
+  margin-bottom: 4rem !important;
+}
+
+.u-text-center {
+  text-align: center !important;
+}
+
+.u-text-dark {
+  color: $color-grey-dark-2 !important;
+}
+
+.u-span-full-grid {
+  grid-column: 1 / -1 !important;
+}
+
+.u-span-2 {
+  grid-column: span 2 !important;
+}
+
+.u-span-3 {
+  grid-column: span 3 !important;
+}
+
+.u-phone-grid-item-top-pos {
+  @include respond(phone) {
+    grid-row: 1 / 1 !important;
+  }
+}
+
+.u-justify-self-start {
+  justify-self: start !important;
+}

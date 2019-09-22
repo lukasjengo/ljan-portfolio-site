@@ -1,0 +1,25 @@
+.knowledge {
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  display: grid;
+  align-items: center;
+  grid-row-gap: 1.5rem;
+
+  &__list {
+    list-style: none;
+    column-count: 2;
+
+    &--item {
+      color: $color-white;
+      opacity: .8;
+      font-size: 1.7rem;
+      &::before {
+        content: '\2022';
+        color: $color-primary-light;
+        display: inline-block;
+        width: 1.5rem;
+      }
+    }
+  }
+}

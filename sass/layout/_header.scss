@@ -1,0 +1,39 @@
+.header {
+    grid-column: full-start / full-end;
+    text-align: center;
+
+    background-image: 
+      linear-gradient(to top, rgba($color-black, .3) 20%, rgba($color-black, .6)), 
+      url(../img/svg/abstract-forest-illustration.svg);
+    background-size: cover;
+    background-position: top;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+
+    @include respond(tab-land) {
+      background-image: 
+        linear-gradient(to top, rgba($color-white, .3) 40%, rgba($color-black, .6)), 
+        url(../img/svg/abstract-forest-illustration.svg);
+    }
+  
+    &__heading {
+
+      &--main {
+        color: $color-primary;
+        font-size: 12rem;
+        font-weight: 900;
+        padding-bottom: 2.5rem;
+      }
+
+      &--sub {
+        display: block;
+        color: $color-black;
+        font-size: 4rem;
+        font-weight: 700;
+        padding-bottom: 2rem;
+      }
+    }
+
+}

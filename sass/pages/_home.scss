@@ -1,0 +1,83 @@
+.section-projects {
+    grid-column: full-start / full-end;
+    padding: 8rem;
+
+    display: grid;
+    // grid-template-columns: repeat(4, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 7rem;
+    justify-items: center;
+}
+
+.section-knowledge {
+  grid-column: center-start / full-end;
+  
+  background-color: $color-black;
+  padding: 12rem 5rem;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 4rem;
+
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+    padding: 6rem 5rem;
+    grid-row-gap: 5rem;
+  }
+
+  @include respond(tab-port) {
+    grid-column: full-start / full-end;
+  }
+
+}
+
+.section-about {
+  grid-column: center-start / center-end;
+  
+  display: grid;
+  padding: 12rem 5rem;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  grid-row-gap: 5rem;
+
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+    padding: 6rem 5rem;
+    grid-row-gap: 5rem;
+  }
+
+  @include respond(tab-port) {
+    grid-column: full-start / full-end;
+  }
+
+  img {
+    display: inline-block;
+    box-shadow: 0 1rem 2.5rem rgba($color-black, .2);
+
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+  }
+}
+
+.section-contact {
+  grid-column: full-start / center-end;
+  background-color: $color-black;
+  padding: 10rem 5rem;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 2rem;
+  justify-items: center;
+
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+    padding: 6rem 5rem;
+    grid-row-gap: 5rem;
+  }
+
+  @include respond(tab-port) {
+    grid-column: full-start / full-end;
+  }
+}

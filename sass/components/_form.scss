@@ -1,0 +1,26 @@
+.contact-form {
+  display: grid;
+  grid-row-gap: 2rem;
+  width: 70%;
+
+  &__label {
+    font-size: 1.5rem;
+    color: $color-white;
+  }
+
+  &__input {
+    font: inherit;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: $color-white;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid $color-primary;
+    transition: border-bottom .4s;
+
+    &:focus {
+      border-bottom: 1px solid $color-secondary;
+    }
+  }
+  
+}

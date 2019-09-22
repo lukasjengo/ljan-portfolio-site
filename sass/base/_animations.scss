@@ -1,0 +1,43 @@
+@keyframes growHeightWidth30 {
+  0% {
+    width: 1vw;
+    height: 1vh;
+  }
+
+  50% {
+    width: 1vw;
+    height: 100vh;
+  }
+
+  100% {
+    width: 30vw;
+    height: 100vh;
+  }
+}
+
+@keyframes growHeightWidth70 {
+  0% {
+    width: 1vw;
+    height: 1vh;
+  }
+
+  50% {
+    width: 1vw;
+    height: 100vh;
+  }
+
+  100% {
+    width: 70vw;
+    height: 100vh;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
