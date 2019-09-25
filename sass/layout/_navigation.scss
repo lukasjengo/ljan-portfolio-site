@@ -7,6 +7,12 @@
         left: 5rem;
     }
 
+    &__logo-img {
+      @include respond(phone) {
+        width: 6rem;
+      }
+    }
+
     // NAVIGATION CTA BUTTON
 
     &__btn {
