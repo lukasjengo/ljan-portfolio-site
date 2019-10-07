@@ -115,11 +115,11 @@
         <section class="section-contact" id="section-contact">
           <form name="contact" method="POST" class="contact-form" data-netlify="true">
             <label for="name" class="contact-form__label">Name</label>
-            <input name="name"  type="text" id="name" class="contact-form__input">
+            <input name="name"  type="text" id="name" class="contact-form__input" required>
             <label for="email" class="contact-form__label">E-mail</label>
-            <input name="email" type="email" id="email" class="contact-form__input">
+            <input name="email" type="email" id="email" class="contact-form__input" required>
             <label for="message" class="contact-form__label">Message</label>
-            <textarea name="message" id="message" rows="3" class="contact-form__input"></textarea>
+            <textarea name="message" id="message" rows="3" class="contact-form__input" required></textarea>
             <button type="submit" class="btn btn--primary u-justify-self-start">Send</button>
           </form>
           <h2 class="heading-secondary heading-secondary--gradient u-phone-grid-item-top-pos">Send me a message.</h2>
